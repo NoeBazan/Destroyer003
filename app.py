@@ -18,9 +18,9 @@ if 'c2' not in st.session_state:
 # Función para generar la primera ecuación de primer grado
 def generar_ecuacion1():
     # Generar coeficientes aleatorios para la ecuación a1.x + b1.y = c1
-    a1 = random.randint(1, 10)
-    b1 = random.randint(-10, 10)
-    c1 = random.randint(-10, 10)
+    a1 = random.randint(1, 100)
+    b1 = random.randint(-100, 100)
+    c1 = random.randint(-100, 100)
     st.session_state['a1'] = a1
     st.session_state['b1'] = b1
     st.session_state['c1'] = c1
@@ -28,9 +28,9 @@ def generar_ecuacion1():
 # Función para generar la segunda ecuación de primer grado
 def generar_ecuacion2():
     # Generar coeficientes aleatorios para la ecuación a2.x + b2.y = c2
-    a2 = random.randint(1, 10)
-    b2 = random.randint(-10, 10)
-    c2 = random.randint(-10, 10)
+    a2 = random.randint(1, 100)
+    b2 = random.randint(-100, 100)
+    c2 = random.randint(-100, 100)
     st.session_state['a2'] = a2
     st.session_state['b2'] = b2
     st.session_state['c2'] = c2
