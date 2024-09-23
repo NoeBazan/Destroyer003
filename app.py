@@ -35,7 +35,7 @@ def generar_ecuacion2():
     st.session_state['b2'] = b2
     st.session_state['c2'] = c2
 
-# Función para resolver la ecuación ax + b = 0
+# Función para resolver las ecuaciones
 def resolver_ecuacionx(a1, b1, c1, a2, b2, c2):
     if (a1*b1-a2*b1) != 0: 
         return (c1*b2-c2*b1)/(-b1*a2+b2*a1) 
@@ -68,7 +68,8 @@ if st.button("¿Quieres conocer la Solución? Presiona aquí"):
     a2 = st.session_state['a2']
     b2 = st.session_state['b2']
     c2 = st.session_state['c2']
-    if a1 is not None and b1 is not None and a2 is not None and b2 is not None:
+    #if a1 is not None and b1 is not None and a2 is not None and b2 is not None:
+    if (a1*b2-a2*b1) is not None:
         st.write(f"La solución para las ecuaciones:")
         st.write(f"{a1}.x + {b1}.y = {c1}")
         st.write(f"y")
