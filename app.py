@@ -74,12 +74,12 @@ if st.button("Mostrar Solución"):
         soluciony = resolver_ecuaciony(a1, b1, c1, a2, b2, c2)
         if solucionx is not None:
             st.write(f"La solución es: x = {solucionx}")
-                    else:
+        else:
             st.write("La ecuación no tiene solución, ya que a = 0.")
 
         if soluciony is not None:
             st.write(f"La solución es: y = {soluciony}")
-                    else:
+        else:
             st.write("La ecuación no tiene solución, ya que a = 0.")        
     else:
         st.write("Primero genera las ecuaciones.")
