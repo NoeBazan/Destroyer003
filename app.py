@@ -39,16 +39,12 @@ def generar_ecuacion2():
 def resolver_ecuacionx(a1, b1, c1, a2, b2, c2):
     if (a1*b1-a2*b1) != 0: 
         return (c1*b2-c2*b1)/(-b1*a2+b2*a1) 
-        
-        #return (c-b) / a
     else:
         return None
         
 def resolver_ecuaciony(a1, b1, c1, a2, b2, c2):
     if (a1*b1-a2*b1) != 0: 
-        
         return (c1*a2-c2*a1)/(b1*a2-b2*a1)
-        #return (c-b) / a
     else:
         return None
 # Título de la aplicación
@@ -78,12 +74,12 @@ if st.button("¿Quieres conocer la Solución? Presiona aquí"):
         soluciony = resolver_ecuaciony(a1, b1, c1, a2, b2, c2)
         if solucionx is not None:
             st.write(f"La solución es: x = {solucionx}")
-        else:
-            st.write("La ecuación no tiene solución, ya que a = 0.")
+        #else:
+        #    st.write("La ecuación no tiene solución, ya que a = 0.")
 
         if soluciony is not None:
             st.write(f"La solución es: y = {soluciony}")
-        else:
-            st.write("La ecuación no tiene solución, ya que a = 0.")        
+        #else:
+        #    st.write("La ecuación no tiene solución, ya que a = 0.")        
     else:
         st.write("Primero genera las ecuaciones.")
