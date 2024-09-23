@@ -69,7 +69,7 @@ if st.button("¿Quieres conocer la Solución? Presiona aquí"):
     b2 = st.session_state['b2']
     c2 = st.session_state['c2']
     #if a1 is not None and b1 is not None and a2 is not None and b2 is not None:
-    if (a1*b2-a2*b1) is not None:
+    if (a1*b2-a2*b1) !=0:
         st.write(f"La solución para las ecuaciones:")
         st.write(f"{a1}.x + {b1}.y = {c1}")
         st.write(f"y")
