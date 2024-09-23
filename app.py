@@ -77,8 +77,8 @@ if st.button("Mostrar Solución"):
                     else:
             st.write("La ecuación no tiene solución, ya que a = 0.")
 
-        if solucionx is not None:
-            st.write(f"La solución es: x = {solucionx}")
+        if soluciony is not None:
+            st.write(f"La solución es: y = {soluciony}")
                     else:
             st.write("La ecuación no tiene solución, ya que a = 0.")        
     else:
