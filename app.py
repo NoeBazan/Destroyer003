@@ -61,7 +61,7 @@ if st.button("Proporcionar 2 Ecuaciones con 2 incógnitas"):
     st.write(f"La ecuación generada es: {st.session_state['a1']}.x + {st.session_state['b1']}.y = {st.session_state['c1']}")
     st.write(f"La ecuación generada es: {st.session_state['a2']}.x + {st.session_state['b2']}.y = {st.session_state['c2']}")
 # Botón para mostrar la solución
-if st.button("Mostrar Solución"):
+if st.button("¿Quieres conocer la Solución? Presiona aquí"):
     a1 = st.session_state['a1']
     b1 = st.session_state['b1']
     c1 = st.session_state['c1']
