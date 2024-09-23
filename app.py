@@ -37,7 +37,7 @@ def generar_ecuacion2():
 
 # Función para resolver la ecuación ax + b = 0
 def resolver_ecuacionx(a1, b1, c1, a2, b2, c2):
-    if (a1*b1-a2*b1) != 0 
+    if (a1*b1-a2*b1) != 0: 
         return (c1*b2-c2*b1)/(b1*a2-b2*a1) 
         
         #return (c-b) / a
